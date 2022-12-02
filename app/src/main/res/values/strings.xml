@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Homework 2</string>
+    <string name="tensinhvien">TenSinhVien</string>
+    <string name="email">Email</string>
+    <string name="tuoi_hoc_sinh">Tuoi hoc sinh</string>
+    <string name="homework_2">Homework 2</string>
+</resources>
