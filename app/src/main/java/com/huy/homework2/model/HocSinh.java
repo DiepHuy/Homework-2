@@ -18,6 +18,7 @@ public class HocSinh {
     public void setTenhocsinh(String tenhocsinh) {
         this.tenhocsinh = tenhocsinh;
     }
+
     public String getEmailhocsinh() {
         return emailhocsinh;
     }
@@ -25,6 +26,7 @@ public class HocSinh {
     public void setEmailhocsinh(String emailhocsinh) {
         this.emailhocsinh = emailhocsinh;
     }
+
     public int getTuoihocsinh() {
         return tuoihocsinh;
     }

@@ -13,10 +13,16 @@ public class OnboardingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnSignup = findViewById(R.id.bai1);
-        btnSignup.setOnClickListener(view -> {
+        Button btnBai1 = findViewById(R.id.bai1);
+        btnBai1.setOnClickListener(view -> {
             Toast.makeText(OnboardingActivity.this, "Bài 1", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(OnboardingActivity.this, Bai1Activity.class);
+            startActivity(intent);
+        });
+        Button btnBai2 = findViewById(R.id.bai2);
+        btnBai2.setOnClickListener(view -> {
+            Toast.makeText(OnboardingActivity.this, "Bài 2", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(OnboardingActivity.this, Bai2Activity.class);
             startActivity(intent);
         });
     }

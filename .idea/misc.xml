@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Diep Huy/AndroidStudioProjects/Homework2/app/src/main/res/layout/activity_bai1.xml" value="0.15537059056678557" />
+        <entry key="..\:/Users/Diep Huy/AndroidStudioProjects/Homework2/app/src/main/res/layout/activity_bai2.xml" value="0.25" />
         <entry key="..\:/Users/Diep Huy/AndroidStudioProjects/Homework2/app/src/main/res/layout/activity_hocsinh.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/Diep Huy/AndroidStudioProjects/Homework2/app/src/main/res/layout/activity_main.xml" value="0.17407407407407408" />
         <entry key="..\:/Users/Diep Huy/AndroidStudioProjects/Homework2/app/src/main/res/layout/item_hocsinh.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Diep Huy/AndroidStudioProjects/Homework2/app/src/main/res/layout/item_mes_send.xml" value="0.22" />
       </map>
     </option>
   </component>

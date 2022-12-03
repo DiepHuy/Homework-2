@@ -29,6 +29,11 @@
             android:exported="false">
         </activity>
 
+        <activity
+            android:name=".Bai2Activity"
+            android:exported="false">
+        </activity>
+
     </application>
 
 </manifest>

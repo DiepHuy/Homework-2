@@ -35,7 +35,7 @@ public class HocSinhAdapter extends RecyclerView.Adapter<HocSinhAdapter.HocSinhV
         }
         holder.ten_hocsinh.setText(hocSinh.getTenhocsinh());
         holder.email_hocsinh.setText(hocSinh.getEmailhocsinh());
-        holder.tuoi_hocsinh.setText(hocSinh.getTuoihocsinh());
+        holder.tuoi_hocsinh.setText(String.valueOf(hocSinh.getTuoihocsinh()));
     }
 
     @Override
