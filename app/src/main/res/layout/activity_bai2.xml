@@ -7,13 +7,13 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list_mes_send"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
         android:layout_marginBottom="30dp"
-        android:background="@drawable/mess_send_ninepat"
+        app:layout_constraintVertical_bias="1"
         app:layout_constraintBottom_toTopOf="@id/mes_send_box"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/mes_send_box"

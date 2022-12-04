@@ -1,9 +1,12 @@
 <resources>
     <string name="app_name">Homework 2</string>
-    <string name="tensinhvien">TenSinhVien</string>
+    <string name="teachername">TeacherName</string>
     <string name="email">Email</string>
     <string name="tuoi_hoc_sinh">Tuoi hoc sinh</string>
     <string name="homework_2">Homework 2</string>
     <string name="send">Send</string>
     <string name="message_send">Message send !</string>
+    <string name="message_recieve">Message Recieve</string>
+    <string name="salary">Hệ số lương</string>
+    <string name="student_name">Student name</string>
 </resources>
