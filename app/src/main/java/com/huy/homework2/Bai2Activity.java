@@ -16,11 +16,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Bai2Activity extends AppCompatActivity {
+    Button send_button;
+    EditText mes_in_box;
     private RecyclerView rcvMes_send;
     private List<Message> mListMes_send;
     private Mes_sendAdapter mes_sendAdapter;
-    Button send_button;
-    EditText mes_in_box;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,13 +44,13 @@ public class Bai2Activity extends AppCompatActivity {
         send_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!mes_in_box.getText().toString().trim().isEmpty()){
+                if (!mes_in_box.getText().toString().trim().isEmpty()) {
 
                     mListMes_send.add(new Message(mes_in_box.getText().toString()));
                     mes_sendAdapter.notifyItemInserted(mes_sendAdapter.getItemCount() - 1);
                     rcvMes_send.scrollToPosition(mes_sendAdapter.getItemCount() - 1);
 
-                    mListMes_send.add(new Message("This is a receive message",1));
+                    mListMes_send.add(new Message("This is a receive message", 1));
                     mes_sendAdapter.notifyItemInserted(mes_sendAdapter.getItemCount() - 1);
                     rcvMes_send.scrollToPosition(mes_sendAdapter.getItemCount() - 1);
 

@@ -15,9 +15,8 @@ import java.util.List;
 
 public class Mes_sendAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    private static final int SEND_TYPE=100;
-    private static final int RECEIVE_TYPE=101;
-
+    private static final int SEND_TYPE = 100;
+    private static final int RECEIVE_TYPE = 101;
 
     private List<Message> mMessageList;
 
@@ -28,10 +27,10 @@ public class Mes_sendAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        if (viewType==SEND_TYPE) {
+        if (viewType == SEND_TYPE) {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_mes_send, parent, false);
             return new Mes_sendViewHolder(view);
-        }else {
+        } else {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_mes_receive, parent, false);
             return new Mess_recieveHolder(view);
         }
@@ -40,9 +39,9 @@ public class Mes_sendAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     @Override
     public int getItemViewType(int position) {
         Message message = mMessageList.get(position);
-        if (message.getType() == 0){
+        if (message.getType() == 0) {
             return SEND_TYPE;
-        }else {
+        } else {
             return RECEIVE_TYPE;
         }
     }
@@ -54,9 +53,9 @@ public class Mes_sendAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             return;
         }
         if (holder instanceof Mes_sendViewHolder) {
-            ((Mes_sendViewHolder)holder).message.setText(mes_send.getContent());
-        }else if (holder instanceof Mess_recieveHolder) {
-            ((Mess_recieveHolder)holder).message111.setText(mes_send.getContent());
+            ((Mes_sendViewHolder) holder).message.setText(mes_send.getContent());
+        } else if (holder instanceof Mess_recieveHolder) {
+            ((Mess_recieveHolder) holder).message111.setText(mes_send.getContent());
         }
     }
 
