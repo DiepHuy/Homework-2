@@ -15,9 +15,9 @@ import com.huy.homework2.model.Teacher;
 import java.util.List;
 
 public class StudentAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-    private List<Object> mStudentList;
     private static final int STUDENT_TYPE = 2;
     private static final int TEACHER_TYPE = 1;
+    private List<Object> mStudentList;
 
     public StudentAdapter(List<Object> mStudentList) {
         this.mStudentList = mStudentList;

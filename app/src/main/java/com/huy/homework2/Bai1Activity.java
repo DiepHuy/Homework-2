@@ -28,15 +28,15 @@ public class Bai1Activity extends AppCompatActivity {
 
         mListHocsinh.add(new Student("A", "acb@gmail.com", 12));
         mListHocsinh.add(new Student("A", "acb@gmail.com", 13));
-        mListHocsinh.add(new Teacher("a","bahbckja@gmail.com",12.5F));
+        mListHocsinh.add(new Teacher("a", "bahbckja@gmail.com", 12.5F));
         mListHocsinh.add(new Student("A", "acb@gmail.com", 14));
-        mListHocsinh.add(new Teacher("b","bahbckja@gmail.com",142.5F));
+        mListHocsinh.add(new Teacher("b", "bahbckja@gmail.com", 142.5F));
         mListHocsinh.add(new Student("A", "acb@gmail.com", 15));
         mListHocsinh.add(new Student("A", "acb@gmail.com", 16));
-        mListHocsinh.add(new Teacher("d","bahbckja@gmail.com",154752.5F));
+        mListHocsinh.add(new Teacher("d", "bahbckja@gmail.com", 154752.5F));
         mListHocsinh.add(new Student("A", "acb@gmail.com", 17));
         mListHocsinh.add(new Student("A", "acb@gmail.com", 18));
-        mListHocsinh.add(new Teacher("c","bahbckja@gmail.com",1542.5F));
+        mListHocsinh.add(new Teacher("c", "bahbckja@gmail.com", 1542.5F));
 
 
         studentAdapter = new StudentAdapter(mListHocsinh);
