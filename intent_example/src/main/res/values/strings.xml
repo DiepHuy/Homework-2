@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Intent Example</string>
+    <string name="pick_photo">Pick photo</string>
+    <string name="to_main_2">To Screen 2</string>
+</resources>
