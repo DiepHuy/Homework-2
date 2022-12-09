@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Calculate_Activity extends AppCompatActivity {
+    public static final String RESULT_KEY = "result";
     public static final String INPUT_MATH_KEY = "INPUT_MATH_KEY";
     public static final String INPUT_KEY = "INPUT_KEY";
     public static final String INPUT_A_KEY = "INPUT_A_KEY";
@@ -47,6 +48,8 @@ public class Calculate_Activity extends AppCompatActivity {
                 intent.putExtra(INPUT_KEY,"+");
                 intent.putExtra(INPUT_A_KEY, DataA);
                 intent.putExtra(INPUT_B_KEY, DataB);
+
+                setResult(RESULT_OK, intent);
                 startActivity(intent);
                 finish();
             }
@@ -60,6 +63,8 @@ public class Calculate_Activity extends AppCompatActivity {
                 intent.putExtra(INPUT_KEY,"-");
                 intent.putExtra(INPUT_A_KEY, DataA);
                 intent.putExtra(INPUT_B_KEY, DataB);
+
+                setResult(RESULT_OK, intent);
                 startActivity(intent);
                 finish();
             }
@@ -73,6 +78,8 @@ public class Calculate_Activity extends AppCompatActivity {
                 intent.putExtra(INPUT_KEY,"×");
                 intent.putExtra(INPUT_A_KEY, DataA);
                 intent.putExtra(INPUT_B_KEY, DataB);
+
+                setResult(RESULT_OK, intent);
                 startActivity(intent);
                 finish();
             }
@@ -86,6 +93,8 @@ public class Calculate_Activity extends AppCompatActivity {
                 intent.putExtra(INPUT_KEY,"÷");
                 intent.putExtra(INPUT_A_KEY, DataA);
                 intent.putExtra(INPUT_B_KEY, DataB);
+
+                setResult(RESULT_OK, intent);
                 startActivity(intent);
                 finish();
             }

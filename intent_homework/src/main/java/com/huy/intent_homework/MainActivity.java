@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -53,14 +54,30 @@ public class MainActivity extends AppCompatActivity {
         if (stringKey != null || stringResult != null) {
             mTvResult.setText(stringA + " " + stringKey + " " + stringB + " = " + stringResult);
 
-            //save result to share preference
-            SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putString(SHARE_PREF_RESULT_KEY, stringA + " " + stringKey + " " + stringB + " = " + stringResult);
-            editor.commit();
+//            //save result to share preference
+//            SharedPreferences.Editor editor = sharedPreferences.edit();
+//            editor.putString(SHARE_PREF_RESULT_KEY, stringA + " " + stringKey + " " + stringB + " = " + stringResult);
+//            editor.commit();
 
             //get result from share preference
-            String resultString = sharedPreferences.getString(SHARE_PREF_RESULT_KEY, " ");
+            String resultString = sharedPreferences.getString(SHARE_PREF_RESULT_KEY,"A");
             mTvLastResult.setText(resultString);
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == CALCULATE_SCREEN) {
+            if (resultCode == RESULT_OK) {
+                String result = data.getStringExtra(Calculate_Activity.INPUT_MATH_KEY);
+                mTvLastResult.setText(result);
+
+                //save result to share preference
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString(SHARE_PREF_RESULT_KEY, result);
+                editor.commit();
+            }
         }
     }
 }
