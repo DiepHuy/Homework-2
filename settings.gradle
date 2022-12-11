@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 rootProject.name = "Homework 2"
 include ':app'
 include ':custombutton'
+include ':intent_example'
+include ':intent_homework'

@@ -12,6 +12,8 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/custombutton" />
+            <option value="$PROJECT_DIR$/intent_example" />
+            <option value="$PROJECT_DIR$/intent_homework" />
           </set>
         </option>
       </GradleProjectSettings>
