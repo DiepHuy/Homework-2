@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemImport"
+        android:icon="@drawable/ic_round_photo_camera_24"
+        android:title="@string/string_import" />
+
+    <item
+        android:id="@+id/itemGallery"
+        android:icon="@drawable/ic_round_photo_library_24"
+        android:title="@string/gallery" />
+
+    <item
+        android:id="@+id/itemSlideshow"
+        android:icon="@drawable/ic_round_slideshow_24"
+        android:title="@string/slideshow" />
+
+    <item
+        android:id="@+id/itemTools"
+        android:icon="@drawable/ic_round_8k_24"
+        android:title="@string/tools" />
+</menu>

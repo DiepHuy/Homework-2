@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NavigationDrawer</string>
+    <string name="close_nav">Close Navigation</string>
+    <string name="open_nav">Open Navigation</string>
+    <string name="string_import">Import</string>
+    <string name="gallery">Gallery</string>
+    <string name="slideshow">Slideshow</string>
+    <string name="tools">Tools</string>
+</resources>
