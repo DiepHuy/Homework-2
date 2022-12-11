@@ -43,14 +43,13 @@ public class Calculate_Activity extends AppCompatActivity {
         mBtnPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Calculate_Activity.this, MainActivity.class);
+                Intent intent = new Intent();
                 intent.putExtra(INPUT_MATH_KEY, String.valueOf(A+B));
                 intent.putExtra(INPUT_KEY,"+");
                 intent.putExtra(INPUT_A_KEY, DataA);
                 intent.putExtra(INPUT_B_KEY, DataB);
 
                 setResult(RESULT_OK, intent);
-                startActivity(intent);
                 finish();
             }
         });
@@ -58,14 +57,13 @@ public class Calculate_Activity extends AppCompatActivity {
         mBtnMinus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Calculate_Activity.this, MainActivity.class);
+                Intent intent = new Intent();
                 intent.putExtra(INPUT_MATH_KEY, String.valueOf(A-B));
                 intent.putExtra(INPUT_KEY,"-");
                 intent.putExtra(INPUT_A_KEY, DataA);
                 intent.putExtra(INPUT_B_KEY, DataB);
 
                 setResult(RESULT_OK, intent);
-                startActivity(intent);
                 finish();
             }
         });
@@ -73,14 +71,13 @@ public class Calculate_Activity extends AppCompatActivity {
         mBtnMultiple.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Calculate_Activity.this, MainActivity.class);
+                Intent intent = new Intent();
                 intent.putExtra(INPUT_MATH_KEY, String.valueOf(A*B));
                 intent.putExtra(INPUT_KEY,"×");
                 intent.putExtra(INPUT_A_KEY, DataA);
                 intent.putExtra(INPUT_B_KEY, DataB);
 
                 setResult(RESULT_OK, intent);
-                startActivity(intent);
                 finish();
             }
         });
@@ -88,14 +85,13 @@ public class Calculate_Activity extends AppCompatActivity {
         mBtnDivide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Calculate_Activity.this, MainActivity.class);
+                Intent intent = new Intent();
                 intent.putExtra(INPUT_MATH_KEY, String.valueOf(A/B));
                 intent.putExtra(INPUT_KEY,"÷");
                 intent.putExtra(INPUT_A_KEY, DataA);
                 intent.putExtra(INPUT_B_KEY, DataB);
 
                 setResult(RESULT_OK, intent);
-                startActivity(intent);
                 finish();
             }
         });
