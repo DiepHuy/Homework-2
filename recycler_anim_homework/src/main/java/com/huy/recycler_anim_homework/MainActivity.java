@@ -1,7 +1,6 @@
 package com.huy.recycler_anim_homework;
 
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
@@ -16,7 +15,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private RecyclerView rcvUser;
-    private User_Adapter user_adapter;
+    private UserAdapter user_adapter;
     private Button btnLeft2Right, btnRight2Left;
 
     @Override
@@ -25,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         rcvUser = findViewById(R.id.rcv_user);
-        user_adapter = new User_Adapter();
+        user_adapter = new UserAdapter();
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         rcvUser.setLayoutManager(linearLayoutManager);
