@@ -14,6 +14,8 @@
             <option value="$PROJECT_DIR$/custombutton" />
             <option value="$PROJECT_DIR$/intent_example" />
             <option value="$PROJECT_DIR$/intent_homework" />
+            <option value="$PROJECT_DIR$/navigationdrawer" />
+            <option value="$PROJECT_DIR$/viewpage_homework" />
           </set>
         </option>
       </GradleProjectSettings>

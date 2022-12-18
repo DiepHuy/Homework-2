@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ViewPage Homework</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_fragment">Home Fragment</string>
+    <string name="favorite_fragment">Favorite fragment</string>
+    <string name="my_home_fragment">My home Fragment</string>
+
+</resources>
