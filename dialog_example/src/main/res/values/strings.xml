@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dialog Example</string>
+    <string name="alert_title">Hello</string>
+    <string name="alert_message">Alert message</string>
+    <string name="show_alert_dialog">Show Alert Dialog</string>
+    <string name="negative_button">Negative</string>
+    <string name="neutral_button">Neutral</string>
+    <string name="show_dialog_fragment">Show Dialog Fragment</string>
+    <string name="show_custom_dialog">Show custom dialog</string>
+</resources>
