@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dialog Homework</string>
+    <string name="start_color">Start Color</string>
+    <string name="end_color">End Color</string>
+    <string name="combine">Combine</string>
+    <string name="alert_message">Alert Message</string>
+    <string name="negative_button">Negative Button</string>
+    <string name="neutral_button">Neutral Button</string>
+    <string name="choose_color">Choose Color</string>
+    <string name="ok">OK</string>
+</resources>
